@@ -1,0 +1,50 @@
+/* Section 1 */
+#select-item {
+  max-height: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#select-tshirt,
+#select-sweater {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin-xxl);
+
+  transition: all 0.3s ease;
+}
+
+#select-tshirt svg,
+#select-sweater svg {
+  /* transition: all 0.3s ease; */
+}
+
+#select-tshirt:hover,
+#select-sweater:hover {
+  cursor: pointer;
+
+  transform: translateY(-5px);
+  /* border: 2px solid var(--accent-color); */
+  /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); */
+}
+.addBorder {
+  border: 2px solid var(--accent-color);
+  border-radius: 30vw;
+}
+
+.icon {
+  width: 25vw;
+  height: 25vw;
+}
+/* Price */
+.item-price {
+  font-family: var(--font-family);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-top: var(--margin-s);
+}

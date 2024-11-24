@@ -1,0 +1,80 @@
+/* global.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+  font-family: var(--font-family);
+  color: var(--primary-font-color);
+
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Blacks and Whites */
+  --black-color: hsl(0, 0%, 0%); /*#black*/
+  --white-color: hsl(0, 0%, 100%); /*#black*/
+
+  /* Primary, Secondary, Accent colors */
+  --primary-color: hsl(213, 33%, 33%); /*#385170*/
+  --secondary-color: hsl(213, 58%, 19%); /*#142d4c*/
+  --accent-color: hsl(166, 37%, 73%); /*#9fd3c7*/
+
+  --accent-color-hover: hsl(166, 37%, 53%);
+
+  /* Font color */
+  --primary-font-color: hsl(0, 0%, 93%); /*#ececec*/
+  --secondary-font-color: hsl(0, 0%, 80%);
+
+  /* Fonts */
+  --font-family: "Montserrat", sans-serif;
+
+  /* Margin */
+  --margin-xxs: 0.25rem;
+  --margin-xs: 0.5rem;
+  --margin-s: 0.75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+
+  /* Padding */
+  --padding-xxs: 0.25rem;
+  --padding-xs: 0.5rem;
+  --padding-s: 0.75rem;
+  --padding-m: 1rem;
+  --padding-l: 1.5rem;
+  --padding-xl: 2rem;
+  --padding-xxl: 3rem;
+
+  /* font size */
+  --font-size-xxs: 0.75rem;
+  --font-size-xs: 0.875rem;
+  --font-size-s: 1rem;
+  --font-size-m: 1.25rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+  --font-size-xxxl: 4rem;
+  --font-size-xxxxl: 6rem;
+  --font-size-xxxxxl: 8rem;
+  --font-size-xxxxxxl: 10rem;
+
+}
+
+* {
+  /* outline: 2px dotted red; */
+}

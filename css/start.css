@@ -1,0 +1,162 @@
+body {
+  background-color: var(--primary-color);
+}
+
+*{
+  /* outline: 1px dotted red; */
+}
+
+/* Header */
+header {
+  height: clamp(30px, 3vh, 100px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--secondary-color);
+  padding: var(--padding-m) var(--padding-l);
+
+  /* box-shadow: 0px 5px 10px 4px rgba(255, 255, 255, 0.123); */
+}
+#headline {
+  display: flex;
+  align-items: center;
+}
+/* header img{
+    width: 5vw;
+    filter:drop-shadow(10px 10px 100px var(--white-color));
+} */
+
+header h1 {
+  font-size: var(--font-size-xl);
+  color: var(--primary-font-color);
+  font-family: var(--font-family);
+
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+#pricing {
+  font-size: var(--font-size-l);
+  font-family: var(--font-family);
+  /* color: var(--primary-font-color); */
+  color: var(--accent-color);
+  margin-left: 5vw;
+
+  font-weight: 600;
+}
+
+/* main */
+#content {
+  max-height: 80vh;
+  min-height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+}
+
+/* container */
+#container {
+  /* background-color: antiquewhite; */
+  display: grid;
+  /* place-items: center; */
+}
+#dir-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1vw 4vw 4vw 0;
+  gap: var(--margin-m);
+}
+
+/* Next & Prev buttons */
+.direction-btn {
+  min-width: 5vw;
+  font-family: var(--font-family);
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 2px;
+
+  background-color: var(--accent-color);
+
+  padding: var(--padding-s) var(--padding-m);
+
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+  line-height: 1;
+
+  border: none;
+}
+
+.direction-btn:hover {
+  cursor: pointer;
+  background-color: var(--accent-color-hover);
+  transform: translateY(-1px);
+}
+.direction-btn:disabled {
+  background-color: var(--secondary-color);
+  cursor: not-allowed;
+}
+
+/* Stautsbar */
+#statusbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 90%;
+
+  margin: 0 4vw;
+
+  column-gap: 2vw;
+  row-gap: var(--margin-s);
+}
+.statusbutton {
+  font-family: var(--font-family);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+
+  background-color: var(--secondary-color);
+  border-radius: 10vw;
+
+  /*
+    TODO: width optimized for mobile view
+  */
+  min-width: 13vw;
+
+  padding: var(--padding-s) var(--padding-m);
+
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+  line-height: 1;
+}
+
+.statusbutton:hover {
+  /* transform: translateY(-4px); */
+  cursor: pointer;
+}
+
+.statusbutton:active {
+  transform: translateY(0px);
+  /* background-color: var(--accent-color); */
+}
+.statusbutton p {
+  color: var(--white-color);
+}
+
+.statusbutton.active {
+  background-color: var(--accent-color);
+  box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.25);
+
+  transform: translateY(-5px);
+}
+.statusbutton.active p {
+  color: var(--black-color);
+  font-weight: 600;
+}
+
